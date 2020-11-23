@@ -129,6 +129,7 @@ CSS
 ```
 
 ## Darkmode Hack
+[codepen](https://codepen.io/trickco/pen/MWeNaoP)
 
 You can add a `filter` attribute to your `html` to easily create a darkmode
 
@@ -144,6 +145,8 @@ html {
 }
 
 ```
+
+[8 tips for dark mode](https://uxplanet.org/8-tips-for-dark-theme-design-8dfc2f8f7ab6)
 
 ## Hacking `rem` for an easier conversion with `px`
 
