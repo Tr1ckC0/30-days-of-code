@@ -1,44 +1,25 @@
 require "prime" 
 
-def count_prime_number_version_1(array)
-    count = 0
-    array.each do |num|
-        next if num == 1
-        if num == 2 or num == 3
-            count += 1
-            puts num
-        elsif num % 2 != 0 and num % 3 != 0
-            count += 1
-            puts num
-        end
-    end
-    count
+def count_prime_number_version(array)
+  array.count do |num|
+    is_prime?(num)
+  end
 end
 
-def count_prime_number_version_sucka(array)
-    prime_count = 0
-    for item in array
-      next if item == 1
-      is_prime = true
-    
-      number = item - 1
-      while number > 1
-        if item % number == 0
-          is_prime = false
-          break
-        else
-          number = number - 1
-        end
-      end
-  
-      if is_prime
-        prime_count += 1
-      end
+def is_prime?(num)
+  return false if num == 1
+
+  (2..(num - 1)).each do |factor|
+    if num % factor == 0
+      return false
     end
-    return prime_count
   end
+  true
+end
+
+# def efficient_is_prime
   
 
-array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 13, 14, 25]
 
-puts count_prime_number_version_1(array)
+puts count_prime_number_version(array)
