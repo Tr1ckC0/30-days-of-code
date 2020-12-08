@@ -1,6 +1,6 @@
 class LinkedList
-    # attr_reader :head
-    # attr_accessor :tail
+    attr_reader :head
+    attr_accessor :tail
     
     def initialize(head, tail = nil)
       @head, @tail = head, tail
