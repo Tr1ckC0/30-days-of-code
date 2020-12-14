@@ -8,3 +8,4 @@
   
 - Fun in Ruby: [15 fun ways](http://rubylearning.com/blog/2010/09/22/14-ways-to-have-fun-coding-ruby/)
 - Literals: [stuff](https://docs.ruby-lang.org/en/2.0.0/syntax/literals_rdoc.html)
+- [Ruby Test Practice](https://github.com/ruby-association/prep-test)
